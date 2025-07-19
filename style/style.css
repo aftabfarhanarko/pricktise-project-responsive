@@ -79,6 +79,8 @@ ul li{
 }
 .img-banner{
     background-image: url('../images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 /* companu-logo */
@@ -217,5 +219,56 @@ footer{
     .img-featured img{
     width: 100%;
     }
+    
+}
+
+/* Responsive Teblet */
+@media screen  and (min-width:576px) and (max-width:992px){
+     nav{
+        flex-direction: column;
+    }
+    ul li a{
+    text-decoration: none;
+        margin-right: 15px;
+        font-size: 1.5rem;
+        
+    }
+    .header-teitle{
+        font-size: 3.3rem;
+        margin-bottom: 10px;
+    }
+   .banner{
+    margin-top: 40px;
+    flex-direction: column-reverse;
+    gap: 50px;
+    align-items: center;
+   }
+    .img-banner img{
+        width: 100%;
+    }
+    .text-banner{
+       
+        text-align: center;
+    }
+    .companu-logo{
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+        justify-items:center ;
+        text-align: center;
+    }
+    .cointener-card{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+    .featured{
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 50px;
+    }
+    .img-featured img{
+    width: 100%;
+    }
+    
     
 }
